@@ -32,7 +32,7 @@ export const handleEvents = async (event: DirectorySyncEvent) => {
       },
     });
 
-    await addTeamMember(teamId, user.id, Role.MEMBER);
+    await addTeamMember(teamId, user.id, Role.MEMBRO);
   }
 
   // User has been updated
@@ -70,7 +70,7 @@ export const handleEvents = async (event: DirectorySyncEvent) => {
     });
 
     // Reactivation of user by adding them back to the team
-    await addTeamMember(teamId, user.id, Role.MEMBER);
+    await addTeamMember(teamId, user.id, Role.MEMBRO);
   }
 
   // User has been removed
